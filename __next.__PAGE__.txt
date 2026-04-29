@@ -1,10 +1,10 @@
 1:"$Sreact.fragment"
-2:I[45678,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
-3:I[32177,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
-4:I[55786,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
-5:I[49609,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
-6:I[75854,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
-7:I[97367,["/portfolio/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+2:I[45678,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
+3:I[32177,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
+4:I[55786,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
+5:I[49609,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
+6:I[75854,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js","/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js"],"default"]
+7:I[97367,["/my-shopify-portfolio/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
 8:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}],["$","footer",null,{"className":"py-8 px-6 bg-white border-t border-[var(--border)]","children":["$","div",null,{"className":"max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4","children":[["$","span",null,{"className":"text-sm font-semibold text-[var(--foreground)]","children":"Portfolio"}],["$","p",null,{"className":"text-xs text-[var(--muted)]","children":["© ",2026," All rights reserved."]}]]}]}]],[["$","script","script-0",{"src":"/portfolio/_next/static/chunks/0xhpuvd8l-h7n.js","async":true}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Qh3SD6h5RPUN9YREduxqT"}
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}],["$","footer",null,{"className":"py-8 px-6 bg-white border-t border-[var(--border)]","children":["$","div",null,{"className":"max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4","children":[["$","span",null,{"className":"text-sm font-semibold text-[var(--foreground)]","children":"Portfolio"}],["$","p",null,{"className":"text-xs text-[var(--muted)]","children":["© ",2026," All rights reserved."]}]]}]}]],[["$","script","script-0",{"src":"/my-shopify-portfolio/_next/static/chunks/0xhpuvd8l-h7n.js","async":true}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OdfcQH4RdSIPbvzesgOSY"}
 9:null
