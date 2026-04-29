@@ -6,41 +6,40 @@ import { useRef, useState } from "react";
 
 type Status = "idle" | "sending" | "success" | "error";
 
+const GOOGLE_FORM_ACTION =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeN1TbnWDaWz6aDO8TuMVfBC3C1YhaKOko1URoYQdfNIsohRA/formResponse";
+const ENTRY_NAME = "entry.1767382278";
+const ENTRY_EMAIL = "entry.1062026285";
+const ENTRY_MESSAGE = "entry.222517769";
+
 export default function Contact() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [status, setStatus] = useState<Status>("idle");
 
-  const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (!formspreeId) {
-      // Formspree未設定時はmailtoにフォールバック
-      const form = e.currentTarget;
-      const name = (form.elements.namedItem("name") as HTMLInputElement).value;
-      const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
-      window.location.href = `mailto:hexiliang04@gmail.com?subject=${encodeURIComponent(`ポートフォリオからのお問い合わせ - ${name}`)}&body=${encodeURIComponent(message)}`;
-      return;
-    }
-
     setStatus("sending");
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+
+    const body = new URLSearchParams({
+      [ENTRY_NAME]: name,
+      [ENTRY_EMAIL]: email,
+      [ENTRY_MESSAGE]: message,
+    });
 
     try {
-      const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
+      await fetch(GOOGLE_FORM_ACTION, {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
       });
-      if (res.ok) {
-        setStatus("success");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
+      setStatus("success");
+      form.reset();
     } catch {
       setStatus("error");
     }
